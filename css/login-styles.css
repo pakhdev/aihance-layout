@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Questrial';
+    src: url('../fonts/Questrial-Regular.ttf') format('truetype');
+}
+html, body {
+    height: 100%;
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.main-background {
+    background: linear-gradient(50deg, #161A2A 0%, #275457 40%, #16182A 100%);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+/* FORM CONTAINER DECORATION */
+.login-area {
+    max-width: 840px;
+    width: 90vw;
+    color: #f0bf93;
+}
+.login-area a {
+    text-decoration: underline;
+    color: #f0bf93;
+    cursor: pointer;
+}
+.login-area a:hover {
+    text-decoration: none;
+}
+.login-area__border-decor--first {
+    width: 100%;
+    height: 100%;
+    background: #915B53;
+    box-shadow: 115px 94px 100px 25px rgba(0, 0, 0, 0.4), 20px 40px 55px rgba(0, 0, 0, 0.35), inset 3px 4px 3px rgba(196, 158, 129, 0.6), inset 1px -29px 8px -25px #23171D;
+    border-radius: 20px;
+    padding: 7px 3px 15px 3px;
+}
+.login-area__background-decor--first {
+    width: 100%;
+    height: calc(100% - 25px);
+    padding-top: 8px;
+    background: linear-gradient(126.32deg, #455058 -27.31%, #222831 100%);
+    border-radius: 20px;
+}
+.login-area__border-decor--second {
+    position: relative;
+    width: calc(100% + 6px);
+    height: 100%;
+    background: #915B53;
+    box-shadow: 9px 7px 10px #151821, inset 3px 4px 3px rgba(196, 158, 129, 0.6), inset 1px -27px 5px -25px #23171D;
+    border-radius: 20px;
+    margin: 0 -3px;
+    padding-top: 7px;
+}
+.login-area__background-decor--second {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(125.86deg, #455058 -27.3%, #222831 76.5%);
+    border-radius: 20px;
+}
+.login-area__bottle-background {
+    width: 100%;
+    height: 100%;
+    background: url(../img/bottle.png) no-repeat 0 calc(100% + 25px);
+}
+
+/* GITHUB TAG */
+.github-tag {
+    position: absolute;
+    width: 27px;
+    height: 70px;
+    left: -27px;
+    top: 70px;
+    background: linear-gradient(165.45deg, #CF433A -57.14%, #8E3B3F 89.7%);
+    box-shadow: 4px 2px 4px rgba(23, 35, 45, 0.3);
+    border-radius: 3px 0 0 3px;
+    padding: 5px;
+}
+.github-tag__dashed-container {
+    width: 27px;
+    height: calc(100% - 3px);
+    border: 1px dashed #B58A61;
+}
+.github-tag__text {
+    display: block;
+    font-size: 12px;
+    color: #CB9B6E;
+    transform: rotate(-90deg);
+    margin-left: -3px;
+    margin-top: 27px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.github-tag__dashed-container a {
+    text-decoration: none;
+}
+
+/* Login Header */
+.login-area__language-switch {
+    text-align: right;
+    padding: 25px 5%;
+    font-size: 13px;
+}
+.login-area__slogan-small {
+    text-align: center;
+    font-size: 14px;
+    color: #ACA8A3;
+    user-select: none;
+}
+.login-area__slogan-big {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 55px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #F8C598;
+    line-height: 45px;
+    user-select: none;
+}
+
+/* Login text */
+.login-area__content-aligner {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.login-area__content {
+    font-size: 14px;
+    width: 370px;
+    margin-right: 40px;
+    margin-top: 40px;
+    padding-bottom: 25px;
+}
+.login-area__project-description {
+    user-select: none;
+}
+.login-area__content-paragraph {
+    margin-top: 20px;
+    font-size: 14px;
+    font-style: normal;
+    text-align: justify;
+}
+
+/* Login form */
+.login-area__form-aligner {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.login-area__form {
+    width: 370px;
+    margin-right: 40px;
+    font-family: 'Questrial', sans-serif;
+}
+.login-area__form-inputs-container {
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-area__form-input-wrapper {
+    max-width: 90%;
+    position: relative;
+    margin-top: 20px;
+}
+.login-area__form-input {
+    color: #ACA8A3;
+    width: 100%;
+    padding: 15px 15px;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #393E47;
+    font-size: 14px;
+    background: none;
+}
+.login-area__form-input-label {
+    position: absolute;
+    margin: 17px 0;
+    padding: 0 4px;
+    color: #757575;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    top: 0;
+    left: 17px;
+    transition: all 0.2s;
+    transform-origin: 0 0;
+    background: none;
+    pointer-events: none;
+}
+.login-area__form-input:valid + .login-area__form-input-label,
+.login-area__form-input:focus + .login-area__form-input-label {
+    transform: scale(0.8) translateY(-30px);
+}
+.login-area__form-input:focus {
+    color: #ACA8A3;
+}
+.login-area__form-input:focus + .login-area__form-input-label {
+    color: #ACA8A3;
+}
+.login-area__form-input-error {
+    text-align: right;
+    padding-top: 3px;
+    font-size: 12px;
+    width: 90%;
+    margin-left: 10%;
+    color: #EC7A73;
+}
+
+/* Form footer */
+.login-area__form-footer {
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 60px;
+}
+.login-area__form-switcher {
+    line-height: 30px;
+    font-size: 14px;
+}
+.login-area__form-submition {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+.login-area__form-button {
+    width: 95px;
+    height: 30px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 10px;
+    line-height: 32px;
+    text-align: center;
+    color: #FEAEA6;
+    text-transform: uppercase;
+    background: linear-gradient(127.57deg, #EC7A73 13.37%, #943D41 76.35%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25), inset 1px 1px 2px #48C1A9;
+    border-radius: 5px;
+}

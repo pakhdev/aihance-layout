@@ -1,0 +1,105 @@
+/* Adaptations */
+@media (min-width: 720px) and (max-width: 930px) {
+    .login-area__bottle-background {
+        background-position-x: calc((-925px + 100vw) * 0.9);
+    }
+
+}
+
+@media (max-width: 720px) {
+    .login-area__form {
+        width: 100%;
+        margin: 0;
+    }
+
+    .login-area__form-inputs-container {
+        height: auto;
+    }
+
+    .login-area__form-input-wrapper {
+        max-width: 100%;
+        padding: 0 5%;
+        margin-top: 10px;
+    }
+
+    .login-area__form-input {
+        width: 100%;
+    }
+
+    .login-area__form-input-label {
+        padding: 0 5%;
+    }
+
+    .login-area__form-footer {
+        margin-top: 40px;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 535px) and (max-width: 720px) {
+    .login-area {
+        min-height: 800px;
+    }
+
+    .login-area__content {
+        margin-top: 25px;
+        width: calc(60vw * 0.85);
+        margin-right: 5%;
+    }
+
+    .login-area__bottle-background {
+        width: 100%;
+        height: 100%;
+        background: url(../img/bottle.png) no-repeat 5% 10vh;
+        background-size: 300px auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .login-area {
+        min-height: 800px;
+    }
+
+    .login-area__content {
+        width: 90%;
+        margin-right: 5%;
+        margin-top: 280px;
+    }
+
+    .login-area__bottle-background {
+        width: 100%;
+        height: 100%;
+        background: url(../img/bottle.png) no-repeat calc((-210px + 100vw) / 2.2) 14vh;
+        background-size: 300px auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .login-area__slogan-big {
+        padding: 0 65px;
+    }
+
+    .login-area__form-footer {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .login-area__form-switcher {
+        width: 100%;
+        text-align: center;
+    }
+
+    .login-area__form-submition {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 390px) {
+    .login-area__slogan-big {
+        padding: 0 30px;
+    }
+}

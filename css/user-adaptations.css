@@ -1,0 +1,8 @@
+@media (max-width: 800px) {
+    .left-panel {
+        display: none;
+    }
+    .user-area__pagination-zone {
+        display: none;
+    }
+}
